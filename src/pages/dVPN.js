@@ -40,10 +40,10 @@ class dVPN extends Component {
                                     </div>
                                 </div>
                             </div>
-                            <div className="col-lg-5">
-                                <div className="SentinelPicture">
+                            <div className="SentinelPicture col-lg-5">
+                               
                                     <img src={SentinelPicture} alt="sentinel"></img>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -56,28 +56,28 @@ class dVPN extends Component {
 
                                 <h1 className="TitleTextDVPNFeatures"> Industry leading dVPN technology ensuring customer trust and satisfaction </h1>
 
-                                <div className="col-lg-3 FeatureDVPNFeatures">
+                                <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={EncryptedDataImg} alt="Encrypted"></img>
                                     <p class="HeadingDVPNFeatures"> Encrypted Data </p>
                                     <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
                                 </div>
 
-                                <div className="col-lg-3 FeatureDVPNFeatures">
+                                <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={OpenSourceImg} alt="OpenSource"></img>
                                     <p class="HeadingDVPNFeatures"> Open Source </p>
                                     <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
 
                                 </div>
-                                <div className="col-lg-3 FeatureDVPNFeatures">
+                                <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={NoLogsImg} alt="NoLogs"></img>
                                     <p class="HeadingDVPNFeatures"> No Logs </p>
                                     <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
 
                                 </div>
-                                <div className="col-lg-3 FeatureDVPNFeatures">
+                                <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={UniversalImg} alt="Universal"></img>
                                     <p class="HeadingDVPNFeatures feature4DVPNFeatures"> Universal Accessibility </p>

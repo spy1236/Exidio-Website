@@ -54,7 +54,7 @@ class HomePage extends Component {
                                 </div>
                                 <div className="col-lg-12" style={{ zIndex: 5 }}>
                                     <div className="row">
-                                        <div className="col-lg-3">
+                                        <div className="col-sm-6 col-lg-3">
                                             <div className="col-lg-12 HomeFeaturesContentBox">
                                                 <img src={HomeFeaturesHeader} alt="header"></img>
                                                 <img src={DistributedImg} alt="Distributed" className="HomeFeaturesContentLogo"></img>
@@ -62,7 +62,7 @@ class HomePage extends Component {
                                                 <p className="HomeFeaturesSubHeading"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-sm-6 col-lg-3">
                                             <div className="col-lg-12 HomeFeaturesContentBox">
                                                 <img src={HomeFeaturesHeader} alt="header"></img>
                                                 <img src={CustomImg} alt="icon" className="HomeFeaturesContentLogo"></img>
@@ -70,7 +70,7 @@ class HomePage extends Component {
                                                 <p className="HomeFeaturesSubHeading"> In-house team to implement custom branding designs and corresponding UI layouts </p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-sm-6 col-lg-3">
                                             <div className="col-lg-12 HomeFeaturesContentBox">
                                                 <img src={HomeFeaturesHeader} alt="header"></img>
                                                 <img src={CrossImg} alt="icon" className="HomeFeaturesContentLogo"></img>
@@ -78,7 +78,7 @@ class HomePage extends Component {
                                                 <p className="HomeFeaturesSubHeading"> Availability on all major desktop and mobile operating systems to ensure that no user is left out  </p>
                                             </div>
                                         </div>
-                                        <div className="col-lg-3">
+                                        <div className="col-sm-6 col-lg-3">
                                             <div className="col-lg-12 HomeFeaturesContentBox">
                                                 <img src={HomeFeaturesHeader} alt="Feactures"></img>
                                                 <img src={AffordableImg} alt="affordable" className="HomeFeaturesContentLogo"></img>
@@ -98,7 +98,7 @@ class HomePage extends Component {
                         <div className="row">
 
                             <div className="col-lg-12">
-                                <h1 className="TitleTextCosmos">Contribution to <br />the Cosmos Ecosystem</h1>
+                                <h1 className="TitleTextCosmos">Contribution to <span>the Cosmos Ecosystem</span></h1>
                                 <div className="row">
                                     <div className="col-lg-6">
                                         <div className="box1">
