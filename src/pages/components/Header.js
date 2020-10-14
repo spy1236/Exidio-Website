@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/ExidioLogo.png';
-import hamberger from '../../assets/menu.svg'
+import hamberger from '../../assets/menu.svg';
+import ContactUsBtn from '../../assets/ContactUsBtn.svg';
 
 class Header extends Component {
     constructor(props) {
@@ -46,7 +47,8 @@ class Header extends Component {
                                 <div className={this.state.isOpen ? "nav-button" : "nav-button ml-auto"}>
                                     <ul className="nav navbar-nav navbar-left">
                                         <li>
-                                            <button type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Contact Us</button>
+                                            <a href="https://share.hsforms.com/1jujVHqg6Snu8rNW_UKK0ZQ54w97" target="_blank" rel="noopener noreferrer">
+                                                <button type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Contact Us<span><img src={ContactUsBtn} alt="icon"></img></span></button></a>
                                         </li>
                                     </ul>
                                 </div>

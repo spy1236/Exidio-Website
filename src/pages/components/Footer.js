@@ -36,7 +36,7 @@ class Footer extends Component {
                                     </ul>
                                 </div>
                             </div>
-                            <div className="col-lg-2 offset-lg-2 margin-t-20">
+                            {/* <div className="col-lg-2 offset-lg-2 margin-t-20">
                                 <h4>Products</h4>
                                 <div className="text-muted margin-t-20">
                                     <ul className="list-unstyled footer-list">
@@ -46,8 +46,8 @@ class Footer extends Component {
                                         <li><Link onClick={evt => {  evt.preventDefault(); } } to="#">Bookmarks</Link></li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div className="col-lg-2 margin-t-20">
+                            </div> */}
+                            {/* <div className="col-lg-2 margin-t-20">
                                 <h4>Company</h4>
                                 <div className="text-muted margin-t-20">
                                     <ul className="list-unstyled footer-list">
@@ -55,8 +55,8 @@ class Footer extends Component {
                                         <li><Link onClick={evt => {  evt.preventDefault(); } } to="">Vision</Link></li>
                                     </ul>
                                 </div>
-                            </div>
-                            <div className="col-lg-2 margin-t-20">
+                            </div> */}
+                            {/* <div className="col-lg-2 margin-t-20">
                                 <h4>Social</h4>
                                 <div className="text-muted margin-t-20">
                                     <ul className="list-unstyled footer-list">
@@ -65,7 +65,7 @@ class Footer extends Component {
                                         <li><Link onClick={evt => {  evt.preventDefault(); } } to="">LinkedIn</Link></li>
                                     </ul>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </footer>

@@ -7,8 +7,8 @@ import Header from './pages/components/Header'
 import Footer from './pages/components/Footer'
 const homePage = React.lazy(() => import('./pages/HomePage'));
 const dVPN = React.lazy(() => import('./pages/dVPN'));
-const cosmos = React.lazy(() => import('./pages/Cosmos'));
-const sentinel = React.lazy(() => import('./pages/Sentinel'));
+const cosmos = React.lazy(() => import('./pages/cosmos'));
+const sentinel = React.lazy(() => import('./pages/sentinel'));
 const about = React.lazy(() => import('./pages/About'));
 
 class App extends Component {

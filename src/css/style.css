@@ -6,7 +6,16 @@ html {
 
 .navbar-nav .nav-item a {
   color: #000;
-  font-weight: bold;
+  font-weight: 600;
+}
+
+body .container {
+  max-width: 1400px;
+}
+
+body .navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 2.5rem;
+  padding-left: .5rem;
 }
 
 .container .navbar-collapse {
@@ -19,6 +28,32 @@ html {
   width: 50px;
 }
 
+.navbar-btn.btn-rounded {
+  background: #000;
+  color: #fff;
+  margin-left: 15px;
+  font-weight: bold;
+  border-radius: 0;
+  height: 50px;
+  position: relative;
+  padding-right: 100px;
+  width: 225px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-btn.btn-rounded span {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  margin: auto;
+}
+
+.navbar-btn.btn-rounded:hover {
+  color: #fff;
+}
+
 .navbar-toggler:focus {
   outline: 0px auto -webkit-focus-ring-color;
 }
@@ -29,16 +64,18 @@ html {
 }
 
 .home-half {
-  padding-bottom: 100px;
+  padding-bottom: 150px;
   padding-top: 150px;
+  background: url("../assets/homebg.svg");
+  background-size: 100%;
 }
 
 .home-half .home-title {
   color: #000;
-  width: 550px;
+  width: 515px;
   display: inline-block;
-  font-weight: 700;
-  font-size: 50px;
+  font-weight: 900;
+  font-size: 64px;
 }
 
 .home-half .home-title span {
@@ -48,7 +85,7 @@ html {
 .home-half .subtitle {
   width: 475px;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 2;
   margin-top: 15px;
   font-size: 20px;
@@ -98,14 +135,19 @@ html {
           justify-content: center;
 }
 
+.second-section .HomeFeaturesPage .col-lg-3 {
+  padding: 0 7px;
+}
+
 .second-section .HomeFeaturesTitle {
   position: relative;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.3;
   letter-spacing: 0em;
   text-align: center;
   color: #ffffff;
   width: 745px;
+  font-size: 48px;
   z-index: 5;
 }
 
@@ -114,9 +156,8 @@ html {
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 0;
-  height: 400px;
   width: 100%;
-  top: -120px;
+  margin-top: 5px;
 }
 
 .second-section .HomeFeaturesLines {
@@ -127,7 +168,7 @@ html {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 0;
-  margin-top: 100px;
+  margin-top: 259px;
 }
 
 .second-section .HomeFeaturesContent {
@@ -166,40 +207,51 @@ html {
   height: 375px;
 }
 
+.second-section .HomeFeaturesContentBox .head-section {
+  padding: 0 10px;
+}
+
+.second-section .HomeFeaturesContentBox .head-line {
+  width: 100%;
+}
+
 .second-section .HomeFeaturesContentLogo {
   position: relative;
-  top: 5%;
-  width: 32px;
-  height: 30px;
+  width: 40px;
+  height: auto;
+  margin-top: 20px;
 }
 
 .second-section .HomeFeaturesHeading {
   position: relative;
-  font-size: 18px;
+  font-size: 24px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.5;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
   margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .second-section .HomeFeaturesSubHeading {
   position: relative;
   font-size: 18px;
   font-style: normal;
-  font-weight: 500;
-  line-height: 1.5;
+  font-weight: 600;
+  line-height: 1.8;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
-  margin-top: 15px;
+  margin-top: 0px;
 }
 
 .contribute-section {
-  padding: 100px 0;
+  padding: 150px 0;
   border-bottom: 1px solid #e9f0f4;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(239, 245, 249, 0.5)), to(rgba(233, 240, 244, 0)));
+  background: linear-gradient(180deg, rgba(239, 245, 249, 0.5) 0%, rgba(233, 240, 244, 0) 100%);
 }
 
 .contribute-section .CosmosPage {
@@ -217,9 +269,10 @@ html {
 
 .contribute-section .TitleTextCosmos {
   position: relative;
-  font-weight: 600;
+  font-weight: 800;
   line-height: 1.3;
   color: #0d0d0d;
+  margin-bottom: 80px;
 }
 
 .contribute-section .TitleTextCosmos span {
@@ -249,6 +302,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
 }
 
 .contribute-section .Logo {
@@ -262,6 +316,11 @@ html {
   line-height: 160%;
   color: #0d0d0d;
   text-align: left;
+  margin-bottom: 25px;
+}
+
+.contribute-section .Text1 span {
+  display: block;
 }
 
 .contribute-section .Text2 {
@@ -293,7 +352,7 @@ html {
   position: relative;
   width: 19px;
   height: 19px;
-  left: 5%;
+  left: 2%;
 }
 
 .contribute-section .box1 {
@@ -305,7 +364,9 @@ html {
 }
 
 .building-dapp {
-  padding: 100px 0;
+  padding: 150px 0;
+  background-image: url("../assets/HomeBackground.png");
+  background-size: cover;
 }
 
 .building-dapp .FirstDAPPPage {
@@ -390,7 +451,7 @@ html {
 .building-dapp .HeadingFirstDAPP {
   position: relative;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 36px;
   line-height: 1.3;
   color: #0d0d0d;
@@ -407,6 +468,13 @@ html {
   color: #0d0d0d;
 }
 
+.building-dapp .SubHeadingFirstDAPP::before {
+  content: '';
+  background-image: url("../assets/tick.svg");
+  width: 10px;
+  height: 10px;
+}
+
 .building-dapp .PictureFirstDAPP > img {
   position: relative;
   width: 100%;
@@ -417,7 +485,9 @@ html {
 }
 
 .first-app {
-  padding: 100px 0;
+  padding: 150px 0;
+  background-image: url("../assets/HomeBackground.png");
+  background-size: cover;
 }
 
 .first-app .FirstDAPPPage {
@@ -502,7 +572,7 @@ html {
 .first-app .HeadingFirstDAPP {
   position: relative;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   font-size: 36px;
   line-height: 1.3;
   color: #0d0d0d;
@@ -536,6 +606,8 @@ html {
 .CompaniesPage .TitleCompanies {
   line-height: 1.3;
   color: #ffffff;
+  font-weight: 800;
+  font-size: 48px;
 }
 
 .CompaniesPage .CompaniesGrid {
@@ -566,7 +638,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 25px;
+  margin: 25px 50px;
 }
 
 .CompaniesPage .CompaniesPictureBox > img {
@@ -574,9 +646,9 @@ html {
 }
 
 .CompaniesPage .companies-row {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   /* margin: 70px 53px; */
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -609,9 +681,10 @@ html {
   position: relative;
   width: 700px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 800;
   line-height: 1.3;
   text-align: center;
+  font-size: 48px;
   color: #ffffff;
 }
 
@@ -621,13 +694,14 @@ html {
   display: -ms-flexbox;
   display: flex;
   /* top: 20%; */
-  width: 200px;
+  width: 225px;
   padding: 15px 15px;
   /* height: 15%; */
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   font-style: normal;
+  height: 50px;
   font-weight: bold;
   font-size: 18px;
   line-height: 23px;
@@ -636,12 +710,26 @@ html {
   background-color: #ffffff;
 }
 
+.contact-us .ContactUsBtnLarge a {
+  color: #000;
+  width: 225px;
+}
+
 .contact-us .ContactUsBtnLarge img {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   right: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .contact-us .ContactText {

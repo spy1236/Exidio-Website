@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 
-import Vector from '../../assets/Vector.png'
+import Vector from '../../assets/Vector.svg'
 
 
 class Enquire extends Component {
@@ -23,8 +23,10 @@ class Enquire extends Component {
                             <div className="ContactUsPage">
                 <h1 className="HeadingContactUs"> Inquire to build custom decentralized VPN </h1> 
                 <div className="ContactUsBtnLarge">
-                    <div class="ContactText"> Contact Us </div>
-                    <img src={Vector} alt="vector"></img>
+                    <a href="https://share.hsforms.com/1jujVHqg6Snu8rNW_UKK0ZQ54w97" target="_blank" rel="noopener noreferrer">
+                        <div class="ContactText"> Contact Us </div>
+                        <img src={Vector} alt="vector"></img>
+                    </a>
                 </div>
             </div>
                             </div>
