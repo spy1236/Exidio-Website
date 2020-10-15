@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Enquire from '../pages/components/Enquire'
-import DVPNHomePage from '../assets/DVPNHomePicture.png';
+import DVPNHomePage from '../assets/DVPNHomePicture.svg';
 import LearnMoreBtn from "../assets/LearnMoreBtn.png";
 import SentinelPicture from "../assets/SentinelPicture.png"
 import EncryptedDataImg from "../assets/EncryptedDataImg.png";
@@ -35,9 +35,9 @@ class dVPN extends Component {
                                     <p className="SubHeadingSentinel"> Verify your connection is end-to-end encrypted. </p>
                                     <p className="SubHeadingSentinel"> Sentinel is not just a VPN, it's a 'decentralized' open-source provable VPN or a 'dVPN'. Learn more at www.sentinel.co </p>
                                     <p className="SubHeadingSentinel"> 'Sentinel Free VPN' is a decentralized VPN (dVPN) that has access to user hosted nodes from the Sentinel Network, currently developed on top of Ethereum (on mobile) & Tendermint and Cosmos Network (on desktop </p>
-                                    <div className="DownloadsPageSentinel">Downloads Page
+                                    <a href="https://sentinel.co/downloads" rel="noopener noreferrer" target="_blank"><div className="DownloadsPageSentinel">Downloads Page
                         <img src={LearnMoreBtn} alt="learnmore"></img>
-                                    </div>
+                                    </div></a>
                                 </div>
                             </div>
                             <div className="SentinelPicture col-lg-5">
@@ -52,36 +52,37 @@ class dVPN extends Component {
                     <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
+                        <h1 className="TitleTextDVPNFeatures"> Industry leading dVPN technology <span>ensuring customer trust and satisfaction </span> </h1>
                             <div className="row">
 
-                                <h1 className="TitleTextDVPNFeatures"> Industry leading dVPN technology ensuring customer trust and satisfaction </h1>
+                              
 
                                 <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={EncryptedDataImg} alt="Encrypted"></img>
                                     <p class="HeadingDVPNFeatures"> Encrypted Data </p>
-                                    <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
+                                    <p class="SubHeadingDVPNFeatures"> Implementation of cutting edge encrypted data tunneling protocols ensuring privacy and security of data </p>
                                 </div>
 
                                 <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={OpenSourceImg} alt="OpenSource"></img>
                                     <p class="HeadingDVPNFeatures"> Open Source </p>
-                                    <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
+                                    <p class="SubHeadingDVPNFeatures"> Back-end architecture that is resilient and constantly reviewed so users don't have any fear of a hack </p>
 
                                 </div>
                                 <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={NoLogsImg} alt="NoLogs"></img>
                                     <p class="HeadingDVPNFeatures"> No Logs </p>
-                                    <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
+                                    <p class="SubHeadingDVPNFeatures"> Users have the assurance that none of their browsing history or search information is being stored and logged </p>
 
                                 </div>
                                 <div className="col-sm-6 col-lg-3 FeatureDVPNFeatures">
 
                                     <img src={UniversalImg} alt="Universal"></img>
                                     <p class="HeadingDVPNFeatures feature4DVPNFeatures"> Universal Accessibility </p>
-                                    <p class="SubHeadingDVPNFeatures"> Distributed blockchain based architecture without a single point of failure ensuring security and up-time </p>
+                                    <p class="SubHeadingDVPNFeatures"> The ability for users to connect and consume content available in different regions across the globe </p>
 
                                 </div>
                             </div>

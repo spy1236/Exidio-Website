@@ -4,9 +4,9 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/ExidioLogo.png';
 import TwitterLogo from '../../assets/TwitterLogo.png';
-import TelegramLogo from '../../assets/TelegramLogo.png';
-import GithubLogo from '../../assets/GithubLogo.png';
-import MediumLogo from '../../assets/MediumLogo.png';
+// import TelegramLogo from '../../assets/TelegramLogo.png';
+// import GithubLogo from '../../assets/GithubLogo.png';
+// import MediumLogo from '../../assets/MediumLogo.png';
 import LinkedinLogo from '../../assets/LinkedinLogo.png';
 
 class Footer extends Component {
@@ -28,11 +28,11 @@ class Footer extends Component {
                             <img className="foot-logo" src={logo} alt="logo" />
                                 <div className="text-muted margin-t-20">
                                 <ul className="list-inline social m-0">
-                                        <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"> <img src={TwitterLogo} alt="twitter"></img></Link></li>
-                                        <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"><img src={TelegramLogo} alt="telegram"></img></Link></li>
-                                        <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"><img src={GithubLogo} alt="github"></img></Link></li>
-                                        <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"><img src={MediumLogo} alt="medium"></img></Link></li>
-                                        <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"> <img src={LinkedinLogo} alt="linkedin"></img></Link></li>
+                                        {/* <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"> <img src={TwitterLogo} alt="twitter"></img></Link></li> */}
+                                        {/* <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"><img src={TelegramLogo} alt="telegram"></img></Link></li> */}
+                                        {/* <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"><img src={GithubLogo} alt="github"></img></Link></li> */}
+                                        <a href="https://twitter.com/Exidio_co" target="blank_"><li className="list-inline-item"><img src={TwitterLogo} alt="Twitter"></img></li></a>
+                                        <a href="https://www.linkedin.com/company/exidio/" target="blank_"><li className="list-inline-item"><img src={LinkedinLogo} alt="linkedin"></img></li></a>
                                     </ul>
                                 </div>
                             </div>

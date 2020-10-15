@@ -4,6 +4,7 @@ import AboutPage2Img2 from '../assets/AboutPage2Img2.png'
 import AboutPage2Img3 from '../assets/AboutPage2Img3.png'
 import AboutPage2Img4 from '../assets/AboutPage2Img4.png'
 import AboutPage2Img5 from '../assets/AboutPage2Img5.png'
+import AboutPage2Img1 from '../assets/AboutPage2Img1.png'
 import AboutPage2Img6 from '../assets/AboutPage2Img6.png'
 class aboutUs extends Component {
 
@@ -30,7 +31,7 @@ class aboutUs extends Component {
                             <div className="col-lg-12">
                                 <div className="row">
                                     <div className="col-sm-6 col-lg-6 AboutPage2ContentBox">
-
+                                        {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img2} alt="profile"></img>
                                         </div>
@@ -40,7 +41,7 @@ class aboutUs extends Component {
 
                                     </div>
                                     <div className="col-sm-6 col-lg-6 AboutPage2ContentBox">
-
+                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img3} alt="profile"></img>
                                         </div>
@@ -50,7 +51,7 @@ class aboutUs extends Component {
 
                                     </div>
                                     <div className="col-sm-6 col-lg-6 AboutPage2ContentBox">
-
+                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="AboutPage2ContentBoxImg" >
                                             <img src={AboutPage2Img4} alt="profile"></img>
                                         </div>
@@ -60,7 +61,7 @@ class aboutUs extends Component {
 
                                     </div>
                                     <div className="col-sm-6 col-lg-6 AboutPage2ContentBox">
-
+                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="AboutPage2ContentBoxImg" >
                                             <img src={AboutPage2Img5} alt="profile"></img>
                                         </div>
@@ -70,7 +71,7 @@ class aboutUs extends Component {
 
                                     </div>
                                     <div className="col-sm-6 col-lg-6 AboutPage2ContentBox">
-
+                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="AboutPage2ContentBoxImg" >
                                             <img src={AboutPage2Img6} alt="profile"></img>
                                         </div>

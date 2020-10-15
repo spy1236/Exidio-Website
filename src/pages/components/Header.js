@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/ExidioLogo.png';
+import logo from '../../assets/ExidioLogo.svg';
 import hamberger from '../../assets/menu.svg';
 import ContactUsBtn from '../../assets/ContactUsBtn.svg';
 
@@ -28,7 +28,7 @@ class Header extends Component {
         return (
             <React.Fragment>
                 <div id="is-sticky">
-                    <nav className="navbar-custom sticky sticky-dark navbar navbar-expand-lg fixed-top" id="nav-bar">
+                    <nav className="navbar-custom sticky sticky-dark navbar navbar-expand-lg" id="nav-bar">
                         <div className="container">
                             <Link className="navbar-brand logo text-uppercase" to="/">
                             <img src={logo} alt="logo" /></Link>

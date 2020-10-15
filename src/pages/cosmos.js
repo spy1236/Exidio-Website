@@ -19,7 +19,7 @@ class Cosmos extends Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="row">
-                                    <div className="col-lg-9">
+                                    <div className="col-lg-7">
                                         <div className="CosmosLandingPageContent">
                                             <h1 className="CosmosLandingPageHeading"> Exidio strives to increase the overall utility and user adoption  <span style={{ color: "#5B47FF" }}> in the Cosmos Ecosystem. </span></h1>
                                             <p className="CosmosLandingPageSubHeading"> Cosmos is a paradigm shifting network of blockchains that are built on the state of the art consensus mechanism, Tendermint. These blockchains will be able to communicate with each other and even non Tendermint based chains through the soon to be released IBC protocol (interblockchain communication) </p>
@@ -38,7 +38,7 @@ class Cosmos extends Component {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className="col-lg-3">
+                                    <div className="col-lg-5">
                                         <div className="CosmosLandingPageLogo">
                                             <img src={CosmosLandingImg5} alt="Ecosystem"></img>
                                         </div>
@@ -85,7 +85,7 @@ class Cosmos extends Component {
 
                                         <img src={CosmosLanding3Img3} alt="Cosmos"></img>
                                         <p className="CosmosLanding3ContextHeading"> Cosmos Core </p>
-                                        <p className="CosmosLanding3ContextSubHeading"> Upcoming proposal to contribute to Cosmos/Tendermint core, <br /> Consistent testing and bug reporting </p>
+                                        <p className="CosmosLanding3ContextSubHeading"> Upcoming proposal to contribute to Cosmos/Tendermint core, Consistent testing and bug reporting </p>
 
                                     </div>
                                 </div>
