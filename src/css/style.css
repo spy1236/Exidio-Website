@@ -9,8 +9,8 @@ html {
   font-weight: 600;
 }
 
-body .container {
-  max-width: 1400px;
+.navbar-nav .nav-item a.active {
+  color: #5b47ff;
 }
 
 body .navbar-expand-lg .navbar-nav .nav-link {
@@ -64,35 +64,73 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 
 .navbar-custom.navbar-white {
-  padding: 40px 0;
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.is-sticky .navbar-custom {
+  margin-top: 0px;
+  padding: 10px 0px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
 }
 
 .home-half {
-  padding-bottom: 150px;
-  padding-top: 80px;
+  padding: 200px 0 150px 0;
+  background: url("../assets/homebg.svg");
   background-size: 100%;
+}
+
+.home-half .home-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home-half .home-right {
+  text-align: right;
 }
 
 .home-half .home-title {
   color: #000;
-  width: 515px;
+  width: 100%;
   display: inline-block;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 46px;
+  text-align: left;
 }
 
 .home-half .home-title span {
   color: #5b47ff;
 }
 
+.home-half .layer-img {
+  width: 74%;
+}
+
 .home-half .subtitle {
-  width: 475px;
-  display: inline-block;
   font-weight: 600;
   line-height: 2;
   margin-top: 15px;
   font-size: 20px;
   color: #0d0d0d;
+  text-align: left;
 }
 
 .second-section {
@@ -150,7 +188,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   text-align: center;
   color: #ffffff;
   width: 745px;
-  font-size: 48px;
+  font-size: 46px;
   z-index: 5;
 }
 
@@ -159,8 +197,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 0;
-  width: 100%;
-  margin-top: 5px;
 }
 
 .second-section .HomeFeaturesLines {
@@ -202,12 +238,12 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 375px;
   grid-gap: 1em;
   gap: 1em;
   padding: 1em;
   background: #242424;
   border-radius: 7px;
-  height: 375px;
 }
 
 .second-section .HomeFeaturesContentBox .head-section {
@@ -227,7 +263,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .second-section .HomeFeaturesHeading {
   position: relative;
-  font-size: 24px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 800;
   line-height: 1.5;
@@ -240,14 +276,14 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .second-section .HomeFeaturesSubHeading {
   position: relative;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 1.8;
   letter-spacing: 0em;
   text-align: left;
   color: #ffffff;
-  margin-top: 0px;
+  margin-top: 10px;
 }
 
 .contribute-section {
@@ -261,9 +297,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .contribute-section .CosmosPage {
@@ -318,8 +351,43 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   margin-bottom: 10px;
 }
 
+.contribute-section .opensource {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 25px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contribute-section .opensource span {
+  margin-right: 20px;
+  background: #5b47ff;
+  color: #fff;
+  padding: 10px 23px 10px 20px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contribute-section .opensource span img {
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.contribute-section .ecosystem {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
+}
+
 .contribute-section .Logo {
   position: relative;
+  width: 70px;
+  margin-right: 15px;
+  margin-bottom: 10px;
 }
 
 .contribute-section .Text1 {
@@ -365,7 +433,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   position: relative;
   width: 19px;
   height: 19px;
-  left: 2%;
+  left: 10px;
+  top: 2px;
 }
 
 .contribute-section .box1 {
@@ -512,6 +581,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .building-dapp .PictureBuildingDAPP img {
   width: 950px;
+  -webkit-filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
+          filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
 }
 
 .first-app {
@@ -524,6 +595,14 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.first-app .first-app-row .stats-sentinel {
+  margin-top: 30px;
+}
+
+.first-app .first-app-row .stats-sentinel a {
+  color: #5b47ff;
 }
 
 .first-app .FirstDAPPPage {
@@ -653,6 +732,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   line-height: 1.3;
   color: #ffffff;
   font-weight: 800;
+  margin-bottom: 40px;
   font-size: 36px;
 }
 
@@ -692,10 +772,9 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 
 .CompaniesPage .companies-row {
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
-  /* margin: 70px 53px; */
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -785,11 +864,12 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 
 .footer {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .footer .foot-logo {
   margin-bottom: 15px;
+  width: 115px;
 }
 
 .footer .footer-list li a {
@@ -823,7 +903,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   color: #000;
   display: inline-block;
   font-weight: 900;
-  font-size: 64px;
+  font-size: 46px;
 }
 
 .dvpn .home-title span {
@@ -871,9 +951,24 @@ body .navbar-expand-lg .navbar-nav .nav-link {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+
+.sentinel-dvpn-section .ContentSentinel .web-sentinel {
+  color: #fff;
+}
+
+.sentinel-dvpn-section .ContentSentinel .web-sentinel a {
+  color: #5b47ff;
+  font-weight: 600;
+}
+
+.sentinel-dvpn-section .ContentSentinel .line-tick {
+  position: relative;
+}
+
+.sentinel-dvpn-section .ContentSentinel .line-tick img {
+  position: absolute;
+  top: 5px;
 }
 
 .sentinel-dvpn-section .HeadingSentinel {
@@ -884,8 +979,9 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   font-style: normal;
   font-weight: 800;
   color: #ffffff;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1.3;
+  margin-bottom: 20px;
 }
 
 .sentinel-dvpn-section .SubHeadingSentinel {
@@ -896,7 +992,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   width: 100%;
   font-size: 16px;
   color: #ffffff;
-  margin: 10px 0;
+  margin-left: 25px;
 }
 
 .sentinel-dvpn-section .SentinelPicture > img {
@@ -918,7 +1014,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 35px;
+  margin-top: 15px;
 }
 
 .sentinel-dvpn-section .DownloadsPageSentinel > img {
@@ -949,10 +1045,10 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .industry-leading .TitleTextDVPNFeatures {
   position: relative;
-  text-align: left;
+  text-align: center;
   font-weight: 800;
   color: #0d0d0d;
-  font-size: 48px;
+  font-size: 36px;
   margin-bottom: 50px;
 }
 
@@ -1021,6 +1117,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   padding-bottom: 100px;
   padding-top: 150px;
   background: url("../assets/homebg.svg");
+  background-size: cover;
 }
 
 .cosmos-section .CosmosLandingPage {
@@ -1068,7 +1165,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .cosmos-section .CosmosLandingPageHeading {
   position: relative;
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 900;
   color: #000000;
 }
@@ -1145,18 +1242,27 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .cosmos-second-section .CosmosLandingPage2Heading {
   position: relative;
-  font-size: 48px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 800;
   line-height: 1.3;
   margin: 0;
   letter-spacing: 0em;
   color: #ffffff;
+  text-align: center;
 }
 
 .cosmos-ecosystem {
   background: #0d0d0d;
   padding: 150px 0;
+}
+
+.cosmos-ecosystem .opensource {
+  color: #fff;
+}
+
+.cosmos-ecosystem .opensource img {
+  margin-left: 5px;
 }
 
 .cosmos-ecosystem .ComsosLandingPage3 {
@@ -1185,12 +1291,12 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 800;
   line-height: 1.2;
   text-align: center;
   color: #ffffff;
-  width: 700px;
+  width: 675px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1258,7 +1364,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 
 .about.AboutPage1 {
-  background: #000;
+  background: url("../assets/homebg.svg");
+  background-size: 100%;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1282,13 +1389,17 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   font-size: 64px;
   font-style: normal;
   text-align: center;
-  color: white;
+  color: #000;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 500px;
   margin: auto;
   font-weight: 900;
+}
+
+.about-portfolio {
+  padding-top: 50px;
 }
 
 .about-portfolio .AboutPage2 {
@@ -1318,7 +1429,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .about-portfolio .AboutPage2ContentBox {
   position: relative;
-  padding: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1326,8 +1436,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-shadow: 0px 0px 0px black;
-          box-shadow: 0px 0px 0px black;
 }
 
 .about-portfolio .AboutPage2ContentBox .texture {
@@ -1348,12 +1456,16 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 .about-portfolio .AboutPage2ContentBoxImgTop {
   position: relative;
-  margin-top: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  padding: 0 30px;
+  padding-top: 75px;
+  background-repeat: no-repeat;
+  background-position: 115px 0px;
   -webkit-filter: drop-shadow(0px -6px 24px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px -6px 24px rgba(0, 0, 0, 0.15));
+  -webkit-box-shadow: 0px 9.55139px 81.1868px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 9.55139px 81.1868px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  margin-bottom: 60px;
 }
 
 .about-portfolio .AboutPage2ContentHeading {
@@ -1388,12 +1500,22 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   letter-spacing: 0em;
   text-align: left;
   color: #0d0d0d;
-  width: 80%;
+  padding-bottom: 35px;
+}
+
+.about-portfolio .AboutPage2ContentSubHeading .about-linkedin {
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 @media (max-width: 991px) {
   .navbar-custom.navbar-white {
     padding: 10px 20px;
+  }
+  .navbar-custom.navbar-white {
+    padding: 10px 20px;
+    background: #E9F0F4;
   }
   .cosmos-section .CosmosLandingPageLogoBox {
     position: relative;
@@ -1438,10 +1560,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     display: none;
   }
   .second-section .HomeFeaturesPage video {
-    display: none;
-  }
-  .second-section .HomeFeaturesLines {
-    display: none;
+    position: relative;
+    width: 100%;
   }
   .home-half .home-title {
     width: 100%;
@@ -1505,7 +1625,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     text-align: center;
   }
   .dvpn .home-title {
-    font-size: 30px;
+    font-size: 36px;
     line-height: 1.3;
   }
   .sentinel-dvpn-section {
@@ -1546,6 +1666,143 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+  .building-dapp .PictureBuildingDAPP img {
+    width: 100%;
+  }
+  .footer-alt .float-left {
+    text-align: center;
+    width: 100%;
+  }
+  .PictureFirstDAPP {
+    width: 100%;
+  }
+  .home-half .home-title {
+    text-align: center;
+  }
+  .home-half .home-right {
+    text-align: center;
+  }
+  .home-half .subtitle {
+    text-align: center;
+  }
+  .contribute-section .opensource span {
+    margin-bottom: 12px;
+  }
+  .contribute-section .opensource {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contribute-section .LogoPortion {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contribute-section .Text1 {
+    text-align: center;
+  }
+  .second-section .HomeFeaturesContentBox {
+    height: auto;
+  }
+  .sentinel-dvpn-section .SentinelPicture {
+    display: none;
+  }
+  .HomeFeaturesLines {
+    display: none;
+  }
+  .cosmos-ecosystem .CosmosLanding3Heading {
+    width: 100%;
+  }
+  .cosmos-ecosystem .opensource {
+    color: #fff;
+    margin-bottom: 40px;
+  }
+  .cosmos-section .CosmosLandingPageSubHeading {
+    text-align: center;
+  }
+  .cosmos-section .CosmosLandingPageLogos {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* top: 5%; */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* grid-gap: 2em; */
+    /* gap: 2em; */
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: auto;
+  }
+  .cosmos-section .CosmosLandingPageLogos {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 5%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* grid-gap: 2em; */
+    gap: 0;
+  }
+  .about.AboutPage1 {
+    padding: 150px 0;
+    padding-bottom: 0;
+  }
+  .about-portfolio .AboutPage2ContentHeading {
+    text-align: center;
+  }
+  .about-portfolio .AboutPage2ContentPosition {
+    text-align: center;
+  }
+  .about-portfolio {
+    padding-top: 0px;
+  }
+}
+
+@media (max-width: 540px) {
+  .second-section .HomeFeaturesTitle {
+    font-size: 24px;
+    width: 100%;
+  }
+  .CompaniesPage .TitleCompanies {
+    text-align: center;
+    font-size: 24px;
+  }
+  .contact-us .HeadingContactUs {
+    width: 100%;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .second-section .HomeFeaturesContentBox {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 576px) {
+  .second-section .HomeFeaturesSubHeading {
+    position: relative;
+    font-size: 14px;
+  }
+  .second-section .HomeFeaturesContentBox {
+    margin: 25px 0;
+    height: 300px;
+  }
+  .second-section .HomeFeaturesHeading {
+    font-size: 16px;
   }
 }
 /*# sourceMappingURL=style.css.map */

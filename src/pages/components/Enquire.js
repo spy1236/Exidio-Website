@@ -15,7 +15,7 @@ class Enquire extends Component {
 
     render() {
         return (
-            <React.Fragment>
+           
                   <section className="contact-us">
                     <div className="container">
                         <div className="col-lg-12">
@@ -33,7 +33,7 @@ class Enquire extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment >
+           
         );
     }
 }

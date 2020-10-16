@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 import { Link } from 'react-router-dom';
-import logo from '../../assets/ExidioLogo.png';
+import logo from '../../assets/ExidioLogo.svg';
 import TwitterLogo from '../../assets/TwitterLogo.png';
 // import TelegramLogo from '../../assets/TelegramLogo.png';
 // import GithubLogo from '../../assets/GithubLogo.png';

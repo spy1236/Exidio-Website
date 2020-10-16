@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch, BrowserRouter as Router  } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './css/style.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -12,6 +14,7 @@ const sentinel = React.lazy(() => import('./pages/sentinel'));
 const about = React.lazy(() => import('./pages/About'));
 
 class App extends Component {
+  
   constructor(props) {
     super(props);
     this.state = {
@@ -25,6 +28,9 @@ openModal () {
 
 componentDidMount()
 {
+  AOS.init({
+    duration : 2000
+  })
   document.body.classList = "";
   document.getElementById('nav-bar').classList.add('navbar-white');
 }

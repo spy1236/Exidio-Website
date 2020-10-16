@@ -9,11 +9,12 @@ html {
             color: #000;
             font-weight: 600;
         }
+        a.active {
+            color: #5b47ff;
+        }
     }
 }
-body .container {
-    max-width: 1400px;
-}
+
 body .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 2.5rem;
     padding-left: 0.5rem;
@@ -57,32 +58,59 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     outline: 0px auto -webkit-focus-ring-color;
 }
 .navbar-custom.navbar-white {
-   
-    padding: 40px 0;
+    padding: 20px 0px;
+    width: 100%;
+    border-radius: 0px;
+    z-index: 999;
+    margin-bottom: 0px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.is-sticky .navbar-custom {
+    margin-top: 0px;
+    padding: 10px 0px;
+    background-color: #fff;
+    -moz-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 33px rgba(0, 0, 0, 0.1);
 }
 .home-half {
-    padding-bottom: 150px;
-    padding-top: 80px;
-    // background: url("../assets/homebg.svg");
+    padding: 200px 0 150px 0;
+
+    background: url("../assets/homebg.svg");
     background-size: 100%;
+    .home-div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .home-right {
+        text-align: right;
+    }
     .home-title {
         color: #000;
-        width: 515px;
+        width: 100%;
         display: inline-block;
         font-weight: 900;
-        font-size: 64px;
+        font-size: 46px;
+        text-align: left;
         span {
             color: rgb(91, 71, 255);
         }
     }
+    .layer-img {
+        width: 74%;
+    }
     .subtitle {
-        width: 475px;
-        display: inline-block;
         font-weight: 600;
         line-height: 2;
         margin-top: 15px;
         font-size: 20px;
         color: #0d0d0d;
+        text-align: left;
     }
 }
 // HomeFeaturesPage css
@@ -120,7 +148,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         text-align: center;
         color: #ffffff;
         width: 745px;
-        font-size: 48px;
+        font-size: 46px;
         z-index: 5;
     }
 
@@ -129,8 +157,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         align-content: center;
         z-index: 0;
 
-        width: 100%;
-        margin-top: 5px;
     }
 
     .HomeFeaturesLines {
@@ -156,12 +182,13 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         position: relative;
         display: flex;
         flex-direction: column;
+        height: 375px;
         grid-gap: 1em;
         gap: 1em;
         padding: 1em;
         background: #242424;
         border-radius: 7px;
-        height: 375px;
+
         .head-section {
             padding: 0 10px;
         }
@@ -180,7 +207,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .HomeFeaturesHeading {
         position: relative;
-        font-size: 24px;
+        font-size: 20px;
         font-style: normal;
         font-weight: 800;
         line-height: 1.5;
@@ -193,14 +220,14 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .HomeFeaturesSubHeading {
         position: relative;
-        font-size: 18px;
+        font-size: 16px;
         font-style: normal;
         font-weight: 600;
         line-height: 1.8;
         letter-spacing: 0em;
         text-align: left;
         color: #ffffff;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 }
 
@@ -211,8 +238,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     background: linear-gradient(180deg, rgba(239, 245, 249, 0.5) 0%, rgba(233, 240, 244, 0) 100%);
     .layer-texure {
         align-items: center;
-    
-    display: flex;
     }
     .CosmosPage {
         position: relative;
@@ -258,9 +283,32 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         display: flex;
         margin-bottom: 10px;
     }
-
+    .opensource {
+        display: flex;
+        margin: 25px 0;
+        align-items: center;
+        span {
+            margin-right: 20px;
+            background: #5b47ff;
+            color: #fff;
+            padding: 10px 23px 10px 20px;
+            font-weight: 500;
+            display: flex;
+            img {
+                margin-left: 15px;
+                vertical-align: middle;
+            }
+        }
+    }
+    .ecosystem {
+        width: 100%;
+        filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
+    }
     .Logo {
         position: relative;
+        width: 70px;
+        margin-right: 15px;
+        margin-bottom: 10px;
     }
 
     .Text1 {
@@ -302,7 +350,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         position: relative;
         width: 19px;
         height: 19px;
-        left: 2%;
+        left: 10px;
+        top: 2px;
     }
 
     .box1 {
@@ -399,7 +448,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         color: #0d0d0d;
         margin-bottom: 30px;
     }
-    
+
     .SubHeadingFirstDAPP {
         font-style: normal;
         font-weight: 600;
@@ -424,6 +473,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     .PictureBuildingDAPP {
         img {
             width: 950px;
+            filter: drop-shadow(0px 1px 14px rgba(0, 0, 0, 0.1));
         }
     }
 }
@@ -433,6 +483,12 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     background-size: cover;
     .first-app-row {
         align-items: center;
+        .stats-sentinel {
+            margin-top: 30px;
+            a {
+                color: #5b47ff;
+            }
+        }
     }
     .FirstDAPPPage {
         position: relative;
@@ -512,8 +568,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 16px;
         line-height: 160%;
         color: #0d0d0d;
-     
-        margin-left: 25px
+
+        margin-left: 25px;
     }
     .line-tick {
         position: relative;
@@ -540,6 +596,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         line-height: 1.3;
         color: #ffffff;
         font-weight: 800;
+        margin-bottom: 40px;
         font-size: 36px;
     }
 
@@ -569,8 +626,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         position: relative;
     }
     .companies-row {
-        justify-content: left;
-        /* margin: 70px 53px; */
+        justify-content: center;
         align-items: center;
     }
 }
@@ -592,29 +648,29 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .HeadingContactUs {
         position: relative;
-    width: 645px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 1.3;
-    text-align: center;
-    font-size: 36px;
-    color: #ffffff;
+        width: 645px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.3;
+        text-align: center;
+        font-size: 36px;
+        color: #ffffff;
     }
 
     .ContactUsBtnLarge {
         position: relative;
-    display: flex;
-    width: 285px;
-    padding: 15px 15px;
-    align-items: center;
-    font-style: normal;
-    height: 50px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 23px;
-    text-align: left;
-    color: #000000;
-    background-color: #ffffff;
+        display: flex;
+        width: 285px;
+        padding: 15px 15px;
+        align-items: center;
+        font-style: normal;
+        height: 50px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 23px;
+        text-align: left;
+        color: #000000;
+        background-color: #ffffff;
         a {
             color: #000;
             width: 225px;
@@ -641,9 +697,10 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 
 .footer {
-    padding: 100px 0;
+    padding: 50px 0;
     .foot-logo {
         margin-bottom: 15px;
+        width: 115px;
     }
 
     .footer-list {
@@ -665,7 +722,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 .dvpn {
     padding-bottom: 0px;
     padding-top: 150px;
-    
+
     .dvpn-img {
         width: 100%;
         margin-top: 70px;
@@ -676,7 +733,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         color: #000;
         display: inline-block;
         font-weight: 900;
-        font-size: 64px;
+        font-size: 46px;
         span {
             color: #5b47ff;
         }
@@ -705,7 +762,20 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         display: flex;
         flex-direction: column;
         height: auto;
-        align-items: center;
+        .web-sentinel {
+            color: #fff;
+            a {
+                color: #5b47ff;
+                font-weight: 600;
+            }
+        }
+        .line-tick {
+            position: relative;
+            img {
+                position: absolute;
+                top: 5px;
+            }
+        }
     }
 
     .HeadingSentinel {
@@ -714,8 +784,9 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         font-style: normal;
         font-weight: 800;
         color: #ffffff;
-        font-size: 48px;
+        font-size: 36px;
         line-height: 1.3;
+        margin-bottom: 20px;
     }
 
     .SubHeadingSentinel {
@@ -726,7 +797,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         width: 100%;
         font-size: 16px;
         color: #ffffff;
-        margin: 10px 0;
+        margin-left: 25px;
     }
 
     .SentinelPicture > img {
@@ -744,7 +815,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 16px;
         color: #5b47ff;
         align-items: center;
-        margin-top: 35px;
+        margin-top: 15px;
     }
 
     .DownloadsPageSentinel > img {
@@ -768,10 +839,10 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .TitleTextDVPNFeatures {
         position: relative;
-        text-align: left;
+        text-align: center;
         font-weight: 800;
         color: #0d0d0d;
-        font-size: 48px;
+        font-size: 36px;
         margin-bottom: 50px;
         span {
             display: block;
@@ -833,6 +904,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     padding-bottom: 100px;
     padding-top: 150px;
     background: url("../assets/homebg.svg");
+    background-size: cover;
     .CosmosLandingPage {
         position: relative;
         width: 100%;
@@ -866,18 +938,18 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .CosmosLandingPageHeading {
         position: relative;
-        font-size: 48px;
+        font-size: 46px;
         font-weight: 900;
         color: #000000;
     }
 
     .CosmosLandingPageSubHeading {
         position: relative;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    color: #000;
-    margin: 30px 0 45px 0;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.5;
+        color: #000;
+        margin: 30px 0 45px 0;
     }
 
     .CosmosLandingPageLogos {
@@ -912,7 +984,6 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 }
 .cosmos-second-section {
     background: #5b47ff;
-    
     padding: 150px 0;
     .CosmosLandingPage2 {
         position: relative;
@@ -923,19 +994,25 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .CosmosLandingPage2Heading {
         position: relative;
-        font-size: 48px;
+        font-size: 36px;
         font-style: normal;
         font-weight: 800;
         line-height: 1.3;
-        margin:0;
+        margin: 0;
         letter-spacing: 0em;
         color: #ffffff;
+        text-align: center;
     }
 }
 .cosmos-ecosystem {
     background: #0d0d0d;
     padding: 150px 0;
-    
+    .opensource {
+        color: #fff;
+        img {
+            margin-left: 5px;
+        }
+    }
     .ComsosLandingPage3 {
         position: relative;
         display: flex;
@@ -950,16 +1027,16 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .CosmosLanding3Heading {
         position: relative;
-    display: flex;
-    font-size: 48px;
-    font-weight: 800;
-    line-height: 1.2;
-    text-align: center;
-    color: #ffffff;
-    width: 700px;
-    justify-content: center;
-    margin: auto;
-    margin-bottom: 50px;
+        display: flex;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 1.2;
+        text-align: center;
+        color: #ffffff;
+        width: 675px;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 50px;
     }
     .CosmosLanding3Context {
         position: relative;
@@ -1009,7 +1086,8 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
 // About page css
 .about.AboutPage1 {
-    background: #000;
+    background: url("../assets/homebg.svg");
+    background-size: 100%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -1027,7 +1105,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         font-size: 64px;
         font-style: normal;
         text-align: center;
-        color: white;
+        color: #000;
         align-items: center;
         width: 500px;
         margin: auto;
@@ -1035,6 +1113,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     }
 }
 .about-portfolio {
+    padding-top: 50px;
     .AboutPage2 {
         position: relative;
         display: flex;
@@ -1058,30 +1137,37 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 
     .AboutPage2ContentBox {
         position: relative;
-        padding: 2em;
         display: flex;
         flex-direction: column;
-        box-shadow: 0px 0px 0px rgba(0, 0, 0, 1);
+        
+       
+
         .texture {
             position: absolute;
-    z-index: 0;
-    width: 100%;
-    left: 0;
+            z-index: 0;
+            width: 100%;
+            left: 0;
         }
     }
 
     .AboutPage2ContentBoxImg {
         position: relative;
         display: flex;
-        
+
         filter: drop-shadow(0px -6px 24px rgba(0, 0, 0, 0.15));
     }
 
     .AboutPage2ContentBoxImgTop {
         position: relative;
-        margin-top: 75px;
-        display: flex;
+        padding: 0 30px;
+        padding-top: 75px;
+        // background: url("../assets/about-texture.png");
+        background-repeat: no-repeat;
+        background-position: 115px 0px;
         filter: drop-shadow(0px -6px 24px rgba(0, 0, 0, 0.15));
+        box-shadow: 0px 9.55139px 81.1868px rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        margin-bottom: 60px;
     }
 
     .AboutPage2ContentHeading {
@@ -1116,7 +1202,13 @@ body .navbar-expand-lg .navbar-nav .nav-link {
         letter-spacing: 0em;
         text-align: left;
         color: #0d0d0d;
-        width: 80%;
+        padding-bottom: 35px;
+        .about-linkedin {
+            position: absolute;
+    bottom: 0;
+    right: 0;
+        }
+       
     }
 }
 
@@ -1125,6 +1217,11 @@ body .navbar-expand-lg .navbar-nav .nav-link {
 @media (max-width: 991px) {
     .navbar-custom.navbar-white {
         padding: 10px 20px;
+    }
+    .navbar-custom.navbar-white {
+        padding: 10px 20px;
+        background: #E9F0F4;
+       
     }
     .cosmos-section {
         .CosmosLandingPageLogoBox {
@@ -1159,11 +1256,10 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     }
     .second-section {
         .HomeFeaturesPage video {
-            display: none;
+            position: relative;
+            width: 100%;
         }
-        .HomeFeaturesLines {
-            display: none;
-        }
+        
     }
     .home-half {
         .home-title {
@@ -1235,7 +1331,7 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     }
     .dvpn {
         .home-title {
-            font-size: 30px;
+            font-size: 36px;
             line-height: 1.3;
         }
     }
@@ -1274,5 +1370,131 @@ body .navbar-expand-lg .navbar-nav .nav-link {
     .about-portfolio .AboutPage2ContentSubHeading {
         align-items: center;
         text-align: center;
+    }
+    .building-dapp .PictureBuildingDAPP img {
+        width: 100%;
+       
+    }
+    .footer-alt {
+        .float-left {
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .PictureFirstDAPP {
+        width: 100%;
+    }
+    .home-half .home-title {
+        text-align: center;
+        
+    }
+    .home-half .home-right {
+        text-align: center;
+    }
+    .home-half .subtitle {
+        text-align: center;
+    }
+    .contribute-section .opensource span {
+        margin-bottom: 12px;
+    }
+    .contribute-section .opensource {
+        flex-direction: column;
+    }
+    .contribute-section .LogoPortion {
+        justify-content: center;
+    }
+    .contribute-section .Text1 {
+        text-align: center;
+        
+    }
+    .second-section .HomeFeaturesContentBox {
+        height: auto;
+    }
+    .sentinel-dvpn-section .SentinelPicture {
+       
+        display: none;
+    }
+    .HomeFeaturesLines {
+        display: none;
+    }
+    .cosmos-ecosystem .CosmosLanding3Heading {
+        width: 100%;
+    }
+    .cosmos-ecosystem .opensource {
+        color: #fff;
+        margin-bottom: 40px;
+    }
+    .cosmos-section .CosmosLandingPageSubHeading {
+        text-align: center;
+    }
+    .cosmos-section .CosmosLandingPageLogos {
+        position: relative;
+        display: flex;
+        /* top: 5%; */
+        flex-direction: column;
+        /* grid-gap: 2em; */
+        /* gap: 2em; */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .cosmos-section .CosmosLandingPageLogos {
+        position: relative;
+        display: flex; 
+        top: 5%;
+        flex-direction: column;
+        /* grid-gap: 2em; */
+        gap: 0;
+    }
+    .about.AboutPage1 {
+        padding: 150px 0;
+    padding-bottom: 0;
+    }
+    .about-portfolio .AboutPage2ContentHeading {
+        text-align: center;
+    }
+    .about-portfolio .AboutPage2ContentPosition {
+        text-align: center;
+    }
+    .about-portfolio {
+        padding-top: 0px;
+    }
+
+}
+
+@media (max-width: 540px) {
+    .second-section .HomeFeaturesTitle {
+        font-size: 24px;
+        width: 100%;
+    }
+    .CompaniesPage .TitleCompanies {
+        text-align: center;
+        font-size: 24px;
+    }
+    .contact-us .HeadingContactUs {
+        width: 100%;
+        font-size: 24px;
+    }
+   
+}
+
+@media (max-width: 991px) and (min-width: 768px) { 
+    .second-section .HomeFeaturesContentBox {
+        height: 300px;
+    }
+   
+}
+@media (max-width: 767px) and (min-width: 576px) { 
+    .second-section .HomeFeaturesSubHeading {
+        position: relative;
+        font-size: 14px;
+    }
+    .second-section .HomeFeaturesContentBox {
+        margin: 25px 0;
+        height: 300px;
+    }
+    .second-section .HomeFeaturesHeading {
+        font-size: 16px;
     }
 }

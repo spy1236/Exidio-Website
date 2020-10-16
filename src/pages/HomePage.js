@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import Enquire from '../pages/components/Enquire'
 import proudctBg from '../assets/HomeBackground.png';
 import Exidio from '../assets/Exidio.mp4';
@@ -11,6 +10,7 @@ import CrossImg from '../assets/CrossImg.svg';
 import AffordableImg from '../assets/AffordableImg.svg';
 import CosmosLogo from "../assets/CosmosLogo.svg";
 import TendermintLogo from "../assets/TendermintLogo.svg";
+import sentinel_ecosystem from '../assets/sentinel_ecosystem.png';
 import SentinelLogo from "../assets/SentinelLogo.svg";
 import LearnMoreBtn from "../assets/LearnMoreBtn.png";
 import BuildingDAPPBtn from '../assets/BuildingDAPPBtn.png';
@@ -18,16 +18,16 @@ import BuildingDAPPPicture from '../assets/BuildingDAPPPicture.png';
 import FirstDAPPBtn from '../assets/FirstDAPPBtn.png';
 import FirstDAPPPicture from '../assets/FirstDAPPPicture.png';
 import SentinelFull from '../assets/SentinelFull.png';
+import cosmosoverview from '../assets/cosmos-overview.png';
 import BPSAALogo from '../assets/BPSAALogo.png';
 import PIVXLogo from '../assets/PIVXLogo.png';
 import KIRALogo from '../assets/KIRALogo.png';
 import SpiderLogo from '../assets/SpiderLogo.png';
 import SodioLogo from '../assets/SodioLogo.png'
 import AlphatechLogo from '../assets/AlphatechLogo.png';
-import staked_layer from '../assets/stacked_layers.svg';
+import giticon from '../assets/git-icon.svg';
+import staked_layer from '../assets/stacked_layers.png';
 import tick from '../assets/tick.svg';
-
-
 
 class HomePage extends Component {
 
@@ -38,9 +38,12 @@ class HomePage extends Component {
                 <section className="section bg-home home-half" id="home" data-image-src={proudctBg}>
                     <div className="container">
                         <div className="row">
-                            <div class="text-white home-div text-center col-lg-8 offset-lg-2">
-                                <h1 class="home-title">Empowering secure access to <span>the Web 3.0</span></h1>
-                                <p className="subtitle">Building decentralized and distributed networking solutions and contributing to the Cosmos open source community</p>
+                            <div class="text-white home-div text-center col-lg-6">
+                                <h1 data-aos="fade-up" data-aos-duration="1000" class="home-title">Empowering secure access to <span>the Web 3.0</span></h1>
+                                <p data-aos="fade-up" data-aos-duration="1000" className="subtitle">Building decentralized and distributed networking solutions and contributing to the Cosmos open source community</p>
+                            </div>
+                            <div className="col-lg-6 home-right">
+                            <img data-aos="zoom-in" src={staked_layer} alt="layer" className="layer-img" />
                             </div>
                         </div>
                     </div>
@@ -50,7 +53,7 @@ class HomePage extends Component {
                         <div className="row">
                             <div className="HomeFeaturesPage">
                                 <h1 className="HomeFeaturesTitle"> Create a resilient and robust decentralized VPN with Exidio </h1>
-                                <div className="video-section">
+                                <div data-aos="fade-up" data-aos-duration="3000"  className="video-section">
                                     <video loop autoPlay muted>
                                         <source src={Exidio} type="video/mp4" style={{ zIndex: -10 }} />
                                     </video>
@@ -110,26 +113,47 @@ class HomePage extends Component {
                         <div className="row">
 
                             <div className="col-lg-12">
-                                <h1 className="TitleTextCosmos">Contribution to<span> the Cosmos Ecosystem</span> </h1>
+                                {/* <h1 className="TitleTextCosmos">Contribution to<span> the Cosmos Ecosystem</span> </h1> */}
                                 <div className="row">
 
-                                    <div className="offset-lg-2 col-lg-4 layer-texure">
+                                    <div className="col-lg-6 layer-texure">
                                         <div className="box2">
                                             <div className="LogoPortion">
                                                 <img src={CosmosLogo} alt="logo" className="Logo"></img>
                                                 <img src={TendermintLogo} alt="logo" className="Logo"></img>
-                                                <img src={SentinelLogo} className="Logo" alt="logo"></img>
+                                                
                                             </div>
-                                            <p className="Text1">To be Updated Soon!</p>
-                                            {/* <p className="Text2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p> */}
-                                            <Link to="/cosmos"><div className="LearnMoreCosmos">Learn More
+                                            <p className="Text1">Contribution to the Cosmos Ecosystem</p>
+                                           
+                                            <img data-aos="zoom-in"  src={cosmosoverview} className="ecosystem" alt="Sentinel EcoSytem"/>
+                                            <div className="opensource">
+                                           <span>To be open sourced <img src={giticon} alt="git"></img></span>
+                                            <a href="https://cosmos.network/" rel="noopener noreferrer" target="_blank" ><div className="LearnMoreCosmos">Learn More
                                                 <img src={LearnMoreBtn} alt="learmore"></img>
-                                            </div></Link>
+                                            </div></a>
+                                            
+                                            </div>
                                         </div>
                                     </div>
-                                    <div calssName="col-lg-6">
-                                        <img src={staked_layer} alt="layer" className="layer-img" />
+                                    <div className="col-lg-6 layer-texure">
+                                        <div className="box2">
+                                            <div className="LogoPortion">
+                                               
+                                                <img src={SentinelLogo} className="Logo" alt="logo"></img>
+                                            </div>
+                                            <p className="Text1">Contribution to the Sentinel Ecosystem</p>
+                                           
+                                           <img data-aos="zoom-in" src={sentinel_ecosystem} className="ecosystem" alt="Sentinel EcoSytem"/>
+                                           <div className="opensource">
+                                           <span>To be open sourced <img src={giticon} alt="git"></img></span>
+                                            <a href="https://sentinel.co/" rel="noopener noreferrer" target="_blank" ><div className="LearnMoreCosmos">Learn More
+                                                <img src={LearnMoreBtn} alt="learmore"></img>
+                                            </div></a>
+                                            
+                                            </div>
+                                        </div>
                                     </div>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -140,16 +164,16 @@ class HomePage extends Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="row first-app-row">
-                                    <div className="col-lg-7">
+                                    <div data-aos="fade-up" data-aos-duration="3000" className="col-lg-7">
 
 
                                         <div className="TitleFirstDAPP">
 
                                             <img src={FirstDAPPBtn} alt="dapp"></img>
-                                            <p className="TitleFirstDAPPText"> First Dapp </p>
+                                            <p className="TitleFirstDAPPText">Dapp Development </p>
                                         </div>
 
-                                        <p className="HeadingFirstDAPP"> Our first dApp, Sentinel dVPN, has seen huge user adoption. </p>
+                                        <p className="HeadingFirstDAPP">Exidio is a core contributor to the Sentinel dVPN client which has seen significant adoption</p>
                                         <div className="col-lg-8">
                                             <div className="line-tick">
                                                 <img src={tick} alt="tick" />
@@ -168,11 +192,12 @@ class HomePage extends Component {
                                                 <p className="SubHeadingFirstDAPP"> 5,000 average daily active sessions </p>
                                             </div>
                                         </div>
-
+                                        <p className="stats-sentinel">
+                                            <a href="https://stats.sentinel.co/" rel="noopener noreferrer" target="_blank">Click here</a> to see real-time stats for the Sentinel dVPN network</p>
                                     </div>
                                     <div className="col-lg-5">
                                         <div className="PictureFirstDAPP" alt="dapp">
-                                            <img src={FirstDAPPPicture} alt="firstapp"></img>
+                                            <img data-aos="fade-up" src={FirstDAPPPicture} alt="firstapp"></img>
                                         </div>
                                     </div>
                                 </div>
@@ -185,13 +210,13 @@ class HomePage extends Component {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="row building-app-row">
-                                    <div className="col-lg-7">
+                                    <div data-aos="fade-up" data-aos-duration="3000" className="col-lg-7">
 
                                         <div className="TitleFirstDAPP">
                                             <img src={BuildingDAPPBtn} alt="dAPP"></img>
-                                            <p className="TitleFirstDAPPText"> Building Dapp </p>
+                                            <p className="TitleFirstDAPPText"> DaPP Implementation Services </p>
                                         </div>
-                                        <h2 className="HeadingFirstDAPP"> Create groundbreaking dVPN applications crafted to your exact specifications with Exidio </h2>
+                                        <h2 className="HeadingFirstDAPP"> Effortlessly setup and monetize on your own dVPN application with Exidio</h2>
                                         <div className="col-lg-8">
                                             <div className="line-tick">
                                                 <img src={tick} alt="tick" />
@@ -210,11 +235,13 @@ class HomePage extends Component {
                                                 <img src={tick} alt="tick" />
                                                 <p className="SubHeadingFirstDAPP">Open source code ensuring full user trust </p>
                                             </div>
+                                            
                                         </div>
+                                      
                                     </div>
                                     <div className="col-lg-5">
                                         <div className="PictureBuildingDAPP">
-                                            <img src={BuildingDAPPPicture} alt="dAPP"></img>
+                                            <img data-aos="fade-up" src={BuildingDAPPPicture} alt="dAPP"></img>
                                         </div>
                                     </div>
                                 </div>
@@ -226,11 +253,10 @@ class HomePage extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
+                            <h1 className="TitleCompanies text-center"> Companies and projects we work with </h1>
                                 <div className="row">
-                                    <div className="col-lg-4">
-                                        <h1 className="TitleCompanies"> Companies and projects we work with </h1>
-                                    </div>
-                                    <div className="col-lg-8">
+                                   
+                                    <div className="col-lg-12">
                                         <div className="row companies-row">
                                             <div className="CompaniesPictureBox">
                                                 <img src={SentinelFull} alt="sentinel"></img>
@@ -245,11 +271,12 @@ class HomePage extends Component {
                                                 <img src={KIRALogo} alt="KIRALogo"></img>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={SpiderLogo} alt="SpiderLogo"></img>
-                                            </div>
-                                            <div className="CompaniesPictureBox">
                                                 <img src={SodioLogo} alt="SodioLogo"></img>
                                             </div>
+                                            <div className="CompaniesPictureBox">
+                                                <img src={SpiderLogo} alt="SpiderLogo"></img>
+                                            </div>
+                                           
                                             <div className="CompaniesPictureBox">
                                                 <img src={AlphatechLogo} alt="AlphatechLogo"></img>
                                             </div>
