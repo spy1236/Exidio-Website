@@ -11,6 +11,7 @@ import AffordableImg from '../assets/AffordableImg.svg';
 import CosmosLogo from "../assets/CosmosLogo.svg";
 import TendermintLogo from "../assets/TendermintLogo.svg";
 import sentinel_ecosystem from '../assets/sentinel_ecosystem.png';
+import cosmos_ecosystem from '../assets/sentinel_ecosystem1.png';
 import SentinelLogo from "../assets/SentinelLogo.svg";
 import LearnMoreBtn from "../assets/LearnMoreBtn.png";
 import BuildingDAPPBtn from '../assets/BuildingDAPPBtn.png';
@@ -18,7 +19,7 @@ import BuildingDAPPPicture from '../assets/BuildingDAPPPicture.png';
 import FirstDAPPBtn from '../assets/FirstDAPPBtn.png';
 import FirstDAPPPicture from '../assets/FirstDAPPPicture.png';
 import SentinelFull from '../assets/SentinelFull.png';
-import cosmosoverview from '../assets/cosmos-overview.png';
+// import cosmosoverview from '../assets/cosmos-overview.png';
 import BPSAALogo from '../assets/BPSAALogo.png';
 import PIVXLogo from '../assets/PIVXLogo.png';
 import KIRALogo from '../assets/KIRALogo.png';
@@ -39,7 +40,7 @@ class HomePage extends Component {
                     <div className="container">
                         <div className="row">
                             <div class="text-white home-div text-center col-lg-6">
-                                <h1 data-aos="fade-up" data-aos-duration="1000" class="home-title">Empowering secure access to <span>the Web 3.0</span></h1>
+                                <h1 data-aos="fade-up" data-aos-duration="1000" class="home-title">Empowering secure access to <span>Web 3.0</span></h1>
                                 <p data-aos="fade-up" data-aos-duration="1000" className="subtitle">Building decentralized and distributed networking solutions and contributing to the Cosmos open source community</p>
                             </div>
                             <div className="col-lg-6 home-right">
@@ -125,7 +126,7 @@ class HomePage extends Component {
                                             </div>
                                             <p className="Text1">Contribution to the Cosmos Ecosystem</p>
                                            
-                                            <img data-aos="zoom-in"  src={cosmosoverview} className="ecosystem" alt="Sentinel EcoSytem"/>
+                                            <img data-aos="zoom-in"  src={cosmos_ecosystem} className="ecosystem" alt="Sentinel EcoSytem"/>
                                             <div className="opensource">
                                            <span>To be open sourced <img src={giticon} alt="git"></img></span>
                                             <a href="https://cosmos.network/" rel="noopener noreferrer" target="_blank" ><div className="LearnMoreCosmos">Learn More

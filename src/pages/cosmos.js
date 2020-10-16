@@ -3,10 +3,11 @@ import CosmosLandingImg1 from "../assets/CosmosLandingImg1.png";
 import CosmosLandingImg2 from "../assets/CosmosLandingImg2.png";
 import CosmosLandingImg3 from "../assets/CosmosLandingImg3.png";
 import CosmosLandingImg4 from "../assets/CosmosLandingImg4.png";
-import CosmosLandingImg5 from "../assets/CosmosLandingImg5.png";
 import CosmosLanding3Img1 from "../assets/CosmosLanding3Img1.png";
 import CosmosLanding3Img2 from "../assets/CosmosLanding3Img2.png";
 import CosmosLanding3Img3 from "../assets/CosmosLanding3Img3.png";
+
+import cosmosoverview from '../assets/cosmos-overview.png';
 import giticon from '../assets/git-icon.svg';
 
 class Cosmos extends Component {
@@ -41,7 +42,7 @@ class Cosmos extends Component {
                                     </div>
                                     <div className="col-lg-5" data-aos="zoom-in">
                                         <div className="CosmosLandingPageLogo">
-                                            <img src={CosmosLandingImg5} alt="Ecosystem"></img>
+                                            <img src={cosmosoverview} alt="Ecosystem"></img>
                                         </div>
                                     </div>
                                 </div>

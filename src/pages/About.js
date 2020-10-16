@@ -5,7 +5,7 @@ import AboutPage2Img3 from '../assets/AboutPage2Img3.png'
 import AboutPage2Img4 from '../assets/AboutPage2Img4.png'
 import AboutPage2Img5 from '../assets/AboutPage2Img5.png'
 import linkedin from '../assets/linkedin.svg'
-import AboutPage2Img6 from '../assets/AboutPage2Img6.png'
+// import AboutPage2Img6 from '../assets/AboutPage2Img6.png'
 class aboutUs extends Component {
 
     render() {
@@ -84,8 +84,8 @@ class aboutUs extends Component {
                                         </div>
                                        
                                     </div>
-                                    <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1000">
-                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
+                                    {/* <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1000">
+                                    <img src={AboutPage2Img1} alt="texture" className="texture" />
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img6} alt="profile"></img>
                                             <p className="AboutPage2ContentHeading"> Humam Malas </p>
@@ -96,7 +96,7 @@ class aboutUs extends Component {
 
                                         </div>
                                        
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
