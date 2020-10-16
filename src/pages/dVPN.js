@@ -42,11 +42,11 @@ class dVPN extends Component {
                                     </div>
                                     <div className="line-tick">
                                         <img src={tick} alt="tick" />
-                                        <p className="SubHeadingSentinel"> Cross Platform and Available on iOS and Android as well </p>
+                                        <p className="SubHeadingSentinel"> Cross Platform and Available on iOS and Android as well. </p>
                                     </div>
                                     <div className="line-tick">
                                         <img src={tick} alt="tick" />
-                                        <p className="SubHeadingSentinel">10s of thousands of active users. </p>
+                                        <p className="SubHeadingSentinel">100,000+ active users. </p>
                                     </div>
                                     <p className="web-sentinel">
                                            Learn more at  <a href="https://sentinel.co/" rel="noopener noreferrer" target="_blank">sentiel.co</a></p>

@@ -186,11 +186,11 @@ class HomePage extends Component {
                                             </div>
                                             <div className="line-tick">
                                                 <img src={tick} alt="tick" />
-                                                <p className="SubHeadingFirstDAPP">With over 75,000 users across all plaforms, Exidio's flagship dVPN application has seen significant growth. </p>
+                                                <p className="SubHeadingFirstDAPP">With over 100,000 users across all plaforms, Exidio's flagship dVPN application has seen significant growth. </p>
                                             </div>
                                             <div className="line-tick">
                                                 <img src={tick} alt="tick" />
-                                                <p className="SubHeadingFirstDAPP"> 5,000 average daily active sessions </p>
+                                                <p className="SubHeadingFirstDAPP"> Over 10,000 average daily sessions </p>
                                             </div>
                                         </div>
                                         <p className="stats-sentinel">
