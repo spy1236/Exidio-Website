@@ -18,6 +18,11 @@ body .navbar-expand-lg .navbar-nav .nav-link {
   padding-left: 0.5rem;
 }
 
+button:focus {
+  outline: 0px dotted !important;
+  outline: 0px auto -webkit-focus-ring-color !important;
+}
+
 .container .navbar-collapse {
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
