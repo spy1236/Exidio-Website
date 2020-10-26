@@ -51,9 +51,9 @@ class HomePage extends Component {
                 <section className="second-section">
                     <div className="container">
                         <div className="row">
-                            <div className="HomeFeaturesPage">
+                            <div className="col-lg-12 HomeFeaturesPage">
                                 <h1 className="HomeFeaturesTitle"> Create a resilient and robust decentralized VPN with Exidio </h1>
-                                <div data-aos="fade-up" data-aos-duration="3000"  className="video-section">
+                                <div  data-aos="fade-up" data-aos-duration="1000" className="col-lg-12 video-section">
                                     <video loop autoPlay muted>
                                         <source src={Exidio} type="video/mp4" style={{ zIndex: -10 }} />
                                     </video>
