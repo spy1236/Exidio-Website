@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import { Modal } from "react-bootstrap";
 import logo from '../../assets/ExidioLogo.svg';
 import hamberger from '../../assets/menu.svg';
 import ContactUsBtn from '../../assets/ContactUsBtn.svg';
@@ -62,36 +61,20 @@ class Header extends Component {
                             <ul className={this.state.isOpen ? "navbar-nav navbar-left" : "navbar-nav ml-auto navbar-left"} id="mySidenav">
                                 <li className="nav-item active"><NavLink className="nav-link" to="/dvpn">dVPN</NavLink></li>
                                 <li className="nav-item"><NavLink className="nav-link" to="/cosmos">Cosmos</NavLink></li>
-                                {/* <li className="nav-item"><Link className="nav-link" to="/sentinel">Sentinel</Link></li> */}
-
-
                                 <li className="nav-item"><NavLink className="nav-link" to="/about">About</NavLink></li>
                             </ul>
                             <div className={this.state.isOpen ? "nav-button" : "nav-button ml-auto"}>
                                 <ul className="nav navbar-nav navbar-left">
                                     <li>
-
-                                        <button onClick={this.handleModel} type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Contact Us<span><img src={ContactUsBtn} alt="icon"></img></span></button>
+                                   
+                                    <NavLink to="/contactus"><button type="button" className="btn btn-custom navbar-btn btn-rounded waves-effect waves-light">Contact Us<span><img src={ContactUsBtn} alt="icon"></img></span></button></NavLink>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </nav>
-                <Modal
-                    show={this.state.show}
-                    onHide={this.handleClose}
-                    className="contactus"
-                    size="lg"
-                  
-                >
-                    <Modal.Header closeButton>
-                       Contact Us
-                    </Modal.Header>
-                    <Modal.Body>
-                        <div> <iframe src="https://share.hsforms.com/1jujVHqg6Snu8rNW_UKK0ZQ54w97" title="Contact Us"></iframe></div>
-                    </Modal.Body>
-                </Modal>
+               
             </div>
 
         );

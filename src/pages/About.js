@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
-// import bgAbout from '../assets/AboutPage2Bg.png';
 import AboutPage2Img2 from '../assets/AboutPage2Img2.png'
 import AboutPage2Img3 from '../assets/AboutPage2Img3.png'
 import AboutPage2Img4 from '../assets/AboutPage2Img4.png'
 import AboutPage2Img5 from '../assets/AboutPage2Img5.png'
 import linkedin from '../assets/linkedin.svg'
-// import AboutPage2Img6 from '../assets/AboutPage2Img6.png'
 class aboutUs extends Component {
 
     render() {
@@ -13,7 +11,6 @@ class aboutUs extends Component {
         return (
             <React.Fragment>
                 <section className="about AboutPage1">
-                    {/* <img className="" src={bgAbout} alt="dvpn"></img> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
@@ -31,7 +28,6 @@ class aboutUs extends Component {
                             <div className="col-lg-12">
                                 <div className="row">
                                     <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1000">
-                                        {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img2} alt="profile"></img>
                                             <p className="AboutPage2ContentHeading"> Dan Edlebeck </p>
@@ -46,7 +42,6 @@ class aboutUs extends Component {
                                        
                                     </div>
                                     <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1500">
-                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img3} alt="profile"></img>
                                             <p className="AboutPage2ContentHeading"> Srinivas Baride </p>
@@ -59,7 +54,6 @@ class aboutUs extends Component {
 
                                     </div>
                                     <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1000">
-                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img4} alt="profile"></img>
                                             <p className="AboutPage2ContentHeading"> Peter Mancuso </p>
@@ -72,7 +66,6 @@ class aboutUs extends Component {
                                       
                                     </div>
                                     <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1500">
-                                    {/* <img src={AboutPage2Img1} alt="texture" className="texture" /> */}
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img5} alt="profile"></img>
                                             <p className="AboutPage2ContentHeading"> Tom David </p>
@@ -84,19 +77,6 @@ class aboutUs extends Component {
                                         </div>
                                        
                                     </div>
-                                    {/* <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1000">
-                                    <img src={AboutPage2Img1} alt="texture" className="texture" />
-                                        <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
-                                            <img src={AboutPage2Img6} alt="profile"></img>
-                                            <p className="AboutPage2ContentHeading"> Humam Malas </p>
-                                        <p className="AboutPage2ContentPosition"> Creative Director </p>
-                                        <p className="AboutPage2ContentSubHeading"> Focusing his career within startups, Humam has helped turn four small businesses profitable via operations overhauls. Humam specializes in managing personnel, team goal setting and execution, and resource optimization to achieve next level performance. 
-                                        <a className="about-linkedin" href="https://www.linkedin.com/in/humam-malas-01681511b/" rel="noopener noreferrer" target="_blank"><img src={linkedin} alt="linkedin"/></a>
-                                        </p>
-
-                                        </div>
-                                       
-                                    </div> */}
                                 </div>
                             </div>
                         </div>

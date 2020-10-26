@@ -12,7 +12,7 @@ const dVPN = React.lazy(() => import('./pages/dVPN'));
 const cosmos = React.lazy(() => import('./pages/cosmos'));
 const sentinel = React.lazy(() => import('./pages/sentinel'));
 const about = React.lazy(() => import('./pages/About'));
-
+const contact = React.lazy(() => import('./pages/ContactUs'));
 class App extends Component {
   
   constructor(props) {
@@ -47,6 +47,7 @@ componentDidMount()
               <Route path="/about" component={about} /> 
               <Route path="/sentinel" component={sentinel} /> 
               <Route path="/cosmos" component={cosmos} /> 
+              <Route path="/contactus" component={contact} /> 
            </Switch>
            </React.Suspense>
            <Footer />

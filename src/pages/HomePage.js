@@ -19,7 +19,6 @@ import BuildingDAPPPicture from '../assets/BuildingDAPPPicture.png';
 import FirstDAPPBtn from '../assets/FirstDAPPBtn.png';
 import FirstDAPPPicture from '../assets/FirstDAPPPicture.png';
 import SentinelFull from '../assets/SentinelFull.png';
-// import cosmosoverview from '../assets/cosmos-overview.png';
 import BPSAALogo from '../assets/BPSAALogo.png';
 import PIVXLogo from '../assets/PIVXLogo.png';
 import KIRALogo from '../assets/KIRALogo.png';
@@ -114,7 +113,6 @@ class HomePage extends Component {
                         <div className="row">
 
                             <div className="col-lg-12">
-                                {/* <h1 className="TitleTextCosmos">Contribution to<span> the Cosmos Ecosystem</span> </h1> */}
                                 <div className="row">
 
                                     <div className="col-lg-6 layer-texure">
@@ -260,26 +258,26 @@ class HomePage extends Component {
                                     <div className="col-lg-12">
                                         <div className="row companies-row">
                                             <div className="CompaniesPictureBox">
-                                                <img src={SentinelFull} alt="sentinel"></img>
+                                               <a href="https://sentinel.co/" target="blank_"> <img src={SentinelFull} alt="sentinel"></img></a>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={BPSAALogo} alt="BPSAALogo"></img>
+                                            <a href="https://dvpn-alliance.github.io/" target="blank_"><img src={BPSAALogo} alt="BPSAALogo"></img></a>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={PIVXLogo} alt="PIVXLogo"></img>
+                                            <a href="https://pivx.org/" target="blank_"><img src={PIVXLogo} alt="PIVXLogo"></img></a>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={KIRALogo} alt="KIRALogo"></img>
+                                            <a href="https://kiracore.com/" target="blank_"><img src={KIRALogo} alt="KIRALogo"></img></a>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={SodioLogo} alt="SodioLogo"></img>
+                                            <a href="https://sodio.tech/" target="blank_"> <img src={SodioLogo} alt="SodioLogo"></img></a>
                                             </div>
                                             <div className="CompaniesPictureBox">
-                                                <img src={SpiderLogo} alt="SpiderLogo"></img>
+                                            <a href="https://spidervpn.org/" target="blank_"> <img src={SpiderLogo} alt="SpiderLogo"></img></a>
                                             </div>
                                            
                                             <div className="CompaniesPictureBox">
-                                                <img src={AlphatechLogo} alt="AlphatechLogo"></img>
+                                            <a href="https://www.alphatechit.co.uk/index.html" target="blank_"> <img src={AlphatechLogo} alt="AlphatechLogo"></img></a>
                                             </div>
                                         </div>
                                     </div>
