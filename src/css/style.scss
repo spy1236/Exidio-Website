@@ -14,10 +14,28 @@ html {
         }
     }
 }
-
+.nav-item:hover:after {
+    width: 100%;
+    left: 0;
+}
 body .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2.5rem;
-    padding-left: 0.5rem;
+    padding: 15px;
+    margin: 0 10px;
+}
+.nav-item {
+    position: relative;
+}
+.nav-item:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #5b47ff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
 }
 button:focus {
     outline: 0px dotted !important;
@@ -48,15 +66,18 @@ button:focus {
     padding-right: 100px;
     width: 225px;
     align-items: center;
+    transition:all 0.5s ease-in-out;
+    &:hover {
+        background: #fff;
+        color: #000;
+    }
     span {
         position: absolute;
         right: 20px;
         top: 10px;
         margin: auto;
     }
-    &:hover {
-        color: #fff;
-    }
+    
 }
 .navbar-toggler:focus {
     outline: 0px auto -webkit-focus-ring-color;
@@ -152,7 +173,7 @@ button:focus {
         text-align: center;
         color: #ffffff;
         width: 745px;
-        margin:auto;
+        margin: auto;
         font-size: 46px;
         z-index: 5;
     }
@@ -644,7 +665,6 @@ button:focus {
     }
     .home-right {
         text-align: center;
-        
     }
 }
 

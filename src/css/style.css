@@ -13,9 +13,32 @@ html {
   color: #5b47ff;
 }
 
+.nav-item:hover:after {
+  width: 100%;
+  left: 0;
+}
+
 body .navbar-expand-lg .navbar-nav .nav-link {
-  padding-right: 2.5rem;
-  padding-left: 0.5rem;
+  padding: 15px;
+  margin: 0 10px;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #5b47ff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
 }
 
 button:focus {
@@ -51,6 +74,13 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.navbar-btn.btn-rounded:hover {
+  background: #fff;
+  color: #000;
 }
 
 .navbar-btn.btn-rounded span {
@@ -58,10 +88,6 @@ button:focus {
   right: 20px;
   top: 10px;
   margin: auto;
-}
-
-.navbar-btn.btn-rounded:hover {
-  color: #fff;
 }
 
 .navbar-toggler:focus {
