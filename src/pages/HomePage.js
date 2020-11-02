@@ -126,7 +126,7 @@ class HomePage extends Component {
                                            
                                             <img data-aos="zoom-in"  src={cosmos_ecosystem} className="ecosystem" alt="Sentinel EcoSytem"/>
                                             <div className="opensource">
-                                          <a href="https://github.com/ExidioCo/modules" target="_blank"  rel="noopener noreferrer"><span>To be open sourced <img src={giticon} alt="git"></img></span></a>
+                                          <a href="https://github.com/ExidioCo/modules" target="_blank"  rel="noopener noreferrer"><span>open sourced <img src={giticon} alt="git"></img></span></a>
                                             <a href="https://cosmos.network/" rel="noopener noreferrer" target="_blank" ><div className="LearnMoreCosmos">Learn More
                                                 <img src={LearnMoreBtn} alt="learmore"></img>
                                             </div></a>
