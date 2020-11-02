@@ -14,6 +14,9 @@ html {
         }
     }
 }
+a {
+    text-decoration: none!important;
+}
 .nav-item:hover:after {
     width: 100%;
     left: 0;
@@ -68,8 +71,8 @@ button:focus {
     align-items: center;
     transition:all 0.5s ease-in-out;
     &:hover {
-        background: #fff;
-        color: #000;
+        background: #5b47ff;
+    color: #fff;
     }
     span {
         position: absolute;
@@ -737,10 +740,16 @@ button:focus {
         font-size: 18px;
         line-height: 23px;
         text-align: left;
+        transition: all 0.5s ease-in-out;
         color: #000000;
         background-color: #ffffff;
+        &:hover {
+            background: #5b47ff;
+    color: #fff;
+        }
         a {
             color: #000;
+            text-decoration: none;
             width: 225px;
             &:hover {
                 text-decoration: none;

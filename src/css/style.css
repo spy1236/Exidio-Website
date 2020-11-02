@@ -13,6 +13,10 @@ html {
   color: #5b47ff;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .nav-item:hover:after {
   width: 100%;
   left: 0;
@@ -79,8 +83,8 @@ button:focus {
 }
 
 .navbar-btn.btn-rounded:hover {
-  background: #fff;
-  color: #000;
+  background: #5b47ff;
+  color: #fff;
 }
 
 .navbar-btn.btn-rounded span {
@@ -913,12 +917,20 @@ button:focus {
   font-size: 18px;
   line-height: 23px;
   text-align: left;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   color: #000000;
   background-color: #ffffff;
 }
 
+.contact-us .ContactUsBtnLarge:hover {
+  background: #5b47ff;
+  color: #fff;
+}
+
 .contact-us .ContactUsBtnLarge a {
   color: #000;
+  text-decoration: none;
   width: 225px;
 }
 
