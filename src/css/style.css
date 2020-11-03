@@ -967,6 +967,7 @@ button:focus {
 .footer .foot-logo {
   margin-bottom: 15px;
   width: 115px;
+  cursor: pointer;
 }
 
 .footer .footer-list li a {

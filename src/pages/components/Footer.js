@@ -13,8 +13,12 @@ class Footer extends Component {
 
     constructor(props) {
         super(props);
+        this.scrollTop = this.scrollTop.bind(this);
         this.state = {
         }
+    }
+    scrollTop() {
+        window.scrollTo(0, 0);
     }
 
     render() {
@@ -25,7 +29,7 @@ class Footer extends Component {
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-4 margin-t-20">
-                            <a href="#top"><img className="foot-logo" src={logo} alt="logo" /></a>
+                            <img className="foot-logo" src={logo} alt="logo" onClick={this.scrollTop}/>
                                 <div className="text-muted margin-t-20">
                                 <ul className="list-inline social m-0">
                                         {/* <li className="list-inline-item"><Link to="" onClick={evt => {  evt.preventDefault(); } } className="social-icon"> <img src={TwitterLogo} alt="twitter"></img></Link></li> */}
