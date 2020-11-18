@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import Enquire from '../pages/components/Enquire'
+import Enquire from '../pages/components/Enquire';
+import Header from '../pages/components/Header'
 import proudctBg from '../assets/HomeBackground.png';
 import Exidio from '../assets/Exidio.mp4';
 import ExidioFeatureLines from '../assets/ExidioFeatureLines.png';
@@ -35,6 +36,7 @@ class HomePage extends Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <section className="section bg-home home-half" id="home" data-image-src={proudctBg}>
                     <div className="container">
                         <div className="row">

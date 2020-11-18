@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../pages/components/Header'
 import AboutPage2Img2 from '../assets/AboutPage2Img2.png'
 import AboutPage2Img3 from '../assets/AboutPage2Img3.png'
 import AboutPage2Img4 from '../assets/AboutPage2Img4.png'
@@ -10,6 +11,7 @@ class aboutUs extends Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <section className="about AboutPage1">
                     <div className="container">
                         <div className="row">

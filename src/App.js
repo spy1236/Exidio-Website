@@ -1,18 +1,21 @@
 import React, { Component } from 'react';
-import { Route, Switch, BrowserRouter as Router  } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './css/style.css';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './pages/components/Header'
-import Footer from './pages/components/Footer'
-const homePage = React.lazy(() => import('./pages/HomePage'));
-const dVPN = React.lazy(() => import('./pages/dVPN'));
-const cosmos = React.lazy(() => import('./pages/cosmos'));
-const sentinel = React.lazy(() => import('./pages/sentinel'));
-const about = React.lazy(() => import('./pages/About'));
-const contact = React.lazy(() => import('./pages/ContactUs'));
+
+import Footer from './pages/components/Footer';
+import homePage from './pages/HomePage';
+import dVPN from './pages/dVPN';
+import cosmos from './pages/cosmos';
+import sentinel from './pages/sentinel';
+import about from './pages/About';
+import contact from './pages/ContactUs';
+
+
+
 class App extends Component {
   
   constructor(props) {
@@ -34,27 +37,46 @@ componentDidMount()
   document.body.classList = "";
   document.getElementById('nav-bar').classList.add('navbar-white');
 }
-  render() {
 
-    return (
-      <React.Fragment>
-        <Router>
-        <Header />
-        <React.Suspense fallback={<div>&nbsp;</div>}>
+      render() {
+        const routes = (
           <Switch>
-              <Route exact path="/" component={homePage} /> 
+             <React.Suspense fallback={<div>&nbsp;</div>}>
+             <Route exact path="/" component={homePage} /> 
               <Route path="/dvpn" component={dVPN} /> 
               <Route path="/about" component={about} /> 
               <Route path="/sentinel" component={sentinel} /> 
               <Route path="/cosmos" component={cosmos} /> 
               <Route path="/contactus" component={contact} /> 
-           </Switch>
-           </React.Suspense>
-           <Footer />
-        </Router>        
-      </React.Fragment>
-    );
-  }
+                </React.Suspense>
+          </Switch>)
+  
+  
+  
+        return (
+          <div className={window.location.pathname ?
+            window.location.pathname.split('/')[1] :
+            'App'}><React.Fragment>
+              
+                       {routes}
+                       <Footer />
+                       </React.Fragment>
+                      
+            </div>
+        );
+      }
+
+
+
+
+
+
+
+
+
+
+
+    
 }
 
 

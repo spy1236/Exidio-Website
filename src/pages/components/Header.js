@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import ScrollToTop from '../components/scrollToTop';
 import logo from '../../assets/ExidioLogo.svg';
 import hamberger from '../../assets/menu.svg';
 import ContactUsBtn from '../../assets/ContactUsBtn.svg';
@@ -25,11 +26,14 @@ class Header extends Component {
         this.setState({ show: true });
     };
     componentDidMount() {
+     
+       
         document.body.classList = "";
         window.addEventListener("scroll", this.scrollNavigation, true);
     }
 
     scrollNavigation = () => {
+       
         var doc = document.documentElement;
         var top = (window.pageYOffset || doc.scrollTop) - (doc.clientTop || 0);
         if (top > 80) {
@@ -44,11 +48,16 @@ class Header extends Component {
 
     setActiveTab = (tab, e) => {
         this.setState({ Tab: tab });
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
     }
     render() {
 
         return (
-
+            <div>
+                  <ScrollToTop />
             <div id="is-sticky">
                 <nav className="navbar navbar-expand-lg fixed-top navbar-custom sticky" id="nav-bar">
                     <div className="container">
@@ -75,6 +84,7 @@ class Header extends Component {
                     </div>
                 </nav>
                
+            </div>
             </div>
 
         );

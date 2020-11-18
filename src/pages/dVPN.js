@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Enquire from '../pages/components/Enquire'
+import Header from '../pages/components/Header'
 import DVPNHomePage from '../assets/DVPNHomePicture.svg';
 import LearnMoreBtn from "../assets/LearnMoreBtn.png";
 import SentinelPicture from "../assets/SentinelPicture.png"
@@ -14,6 +15,7 @@ class dVPN extends Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <section className="dvpn">
                     <div className="container">
                         <div className="col-lg-12">

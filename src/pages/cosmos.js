@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../pages/components/Header';
 import CosmosLandingImg1 from "../assets/CosmosLandingImg1.png";
 import CosmosLandingImg2 from "../assets/CosmosLandingImg2.png";
 import CosmosLandingImg3 from "../assets/CosmosLandingImg3.png";
@@ -16,6 +17,7 @@ class Cosmos extends Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <section className="cosmos-section">
                     <div className="container">
                         <div className="row">

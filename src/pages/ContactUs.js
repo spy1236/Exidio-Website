@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Header from '../pages/components/Header'
+
 import HubspotForm from 'react-hubspot-form'
 import staked_layer from '../assets/stacked_layers.png';
 import SentinelFull from '../assets/SentinelFull.png';
@@ -14,6 +16,7 @@ class ContactUs extends Component {
 
         return (
             <React.Fragment>
+                <Header />
                 <section className="contactus section bg-home home-half">
                     <div className="container">
                         <div className="row">
