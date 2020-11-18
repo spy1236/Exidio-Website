@@ -16,7 +16,7 @@ class Cosmos extends Component {
     render() {
 
         return (
-            <React.Fragment>
+            <div>
                 <Header />
                 <section className="cosmos-section">
                     <div className="container">
@@ -103,7 +103,7 @@ class Cosmos extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment >
+            </div>
         );
     }
 }

@@ -15,7 +15,7 @@ class ContactUs extends Component {
     render() {
 
         return (
-            <React.Fragment>
+            <div>
                 <Header />
                 <section className="contactus section bg-home home-half">
                     <div className="container">
@@ -78,7 +78,7 @@ class ContactUs extends Component {
                     </div>
 
                 </section>
-            </React.Fragment>
+            </div>
         );
     }
 }

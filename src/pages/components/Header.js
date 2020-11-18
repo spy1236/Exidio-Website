@@ -27,10 +27,7 @@ class Header extends Component {
     };
     componentDidMount() {
      
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
+        
         document.body.classList = "";
         window.addEventListener("scroll", this.scrollNavigation, true);
     }

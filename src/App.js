@@ -31,6 +31,7 @@ openModal () {
 
 componentDidMount()
 {
+  
   AOS.init({
     duration : 2000
   })

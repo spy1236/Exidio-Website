@@ -10,7 +10,7 @@ class aboutUs extends Component {
     render() {
 
         return (
-            <React.Fragment>
+            <div>
                 <Header />
                 <section className="about AboutPage1">
                     <div className="container">
@@ -84,7 +84,7 @@ class aboutUs extends Component {
                         </div>
                     </div>
                 </section>
-            </React.Fragment >
+            </div >
         );
     }
 }

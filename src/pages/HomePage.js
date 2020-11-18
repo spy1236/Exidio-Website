@@ -35,7 +35,7 @@ class HomePage extends Component {
     render() {
 
         return (
-            <React.Fragment>
+            <div>
                 <Header />
                 <section className="section bg-home home-half" id="home" data-image-src={proudctBg}>
                     <div className="container">
@@ -290,7 +290,7 @@ class HomePage extends Component {
 
                 </section>
                 <Enquire />
-            </React.Fragment >
+            </div>
         );
     }
 }
