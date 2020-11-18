@@ -27,7 +27,10 @@ class Header extends Component {
     };
     componentDidMount() {
      
-       
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth',
+          });
         document.body.classList = "";
         window.addEventListener("scroll", this.scrollNavigation, true);
     }
@@ -48,10 +51,6 @@ class Header extends Component {
 
     setActiveTab = (tab, e) => {
         this.setState({ Tab: tab });
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth',
-          });
     }
     render() {
 
