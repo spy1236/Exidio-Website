@@ -23,7 +23,7 @@ class aboutUs extends Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> 
                 <section className="about-portfolio">
                     <div className="container">
                         <div className="row">
