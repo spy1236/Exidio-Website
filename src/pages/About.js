@@ -3,7 +3,7 @@ import Header from '../pages/components/Header'
 import AboutPage2Img2 from '../assets/AboutPage2Img2.png'
 import AboutPage2Img3 from '../assets/AboutPage2Img3.png'
 import AboutPage2Img4 from '../assets/AboutPage2Img4.png'
-import AboutPage2Img5 from '../assets/AboutPage2Img5.png'
+import AboutPage2Img5 from '../assets/AboutPage2Img7.png'
 import linkedin from '../assets/linkedin.svg'
 class aboutUs extends Component {
 
@@ -70,10 +70,10 @@ class aboutUs extends Component {
                                     <div className="col-sm-12 col-lg-6 AboutPage2ContentBox" data-aos="fade-up" data-aos-duration="1500">
                                         <div className="col-lg-12 AboutPage2ContentBoxImgTop" >
                                             <img src={AboutPage2Img5} alt="profile"></img>
-                                            <p className="AboutPage2ContentHeading"> Tom David </p>
-                                        <p className="AboutPage2ContentPosition"> Head of Marketing </p>
-                                        <p className="AboutPage2ContentSubHeading"> From working as a producer in the advertising Industry for clients including BBC Horizon, Audi, and GSK. Through to his current role as a digital communications officer for local government. David has vast experience in delivering effective communication and engagement strategies that grow brands and deliver tangible results. 
-                                        <a className="about-linkedin" href="https://www.linkedin.com/in/tom-david-0329721a7/" rel="noopener noreferrer" target="_blank"><img src={linkedin} alt="linkedin"/></a>
+                                            <p className="AboutPage2ContentHeading"> Adrianna Mendez </p>
+                                        <p className="AboutPage2ContentPosition"> CMO</p>
+                                        <p className="AboutPage2ContentSubHeading"> Adrianna’s passion for cryptocurrency and blockchain technology began after encountering bitcoin in 2015. Her experience leading Cypherglass, a blockchain hosting company, has given her unique insight to growing blockchain communities, products, and understanding of blockchain network governance. 
+                                        <a className="about-linkedin" href="https://www.linkedin.com/in/adriannamendez" rel="noopener noreferrer" target="_blank"><img src={linkedin} alt="linkedin"/></a>
                                         </p>
 
                                         </div>
